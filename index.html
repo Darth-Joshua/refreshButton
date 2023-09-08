@@ -1,20 +1,27 @@
-<link rel="stylesheet" href="style.css">
-
-<body>
-    <div>
-        <button id="reverse">
-            Reverse
-        </button>
-    </div>
-    <img id="won" hidden src="./image/giphy.gif">
-    <div class="square" id="square">
-        <div>
-            <h1 id="time">02:00</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img id="won" hidden src="./image/giphy.gif">
+        <div class="square" id="square">
+            <div>
+                <button id="reverse">Reverse</button>
+            </div>
+            <div>
+                <h1 id="time2">02:00</h1>
+                <h1 id="time0" hidden>00:00</h1>
+            </div>
+            <div>
+                <button class="start" id="start">start</button>
+                <button class="start2" id="start2" hidden>start</button>
+            </div>
         </div>
-        <div>
-            <button class="start" id="start">start</button>
-        </div>
-    </div>
-    <audio src="./audio/ZURQ2FE-notification.mp3" id="sound"></audio>
-    <script src="./functions.js"></script>
-</body>
+        <audio src="./audio/ZURQ2FE-notification.mp3" id="sound"></audio>
+        <script src="./functions.js"></script>
+    </body>
+</html>

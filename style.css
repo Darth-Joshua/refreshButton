@@ -1,16 +1,6 @@
 html, body {
-    background-color: rgb(211, 211, 211);
     margin: 0;
-}
-
-#won {
-    height: 100%;
-    width: 100%;
-}
-
-p {
-    padding: .3em;
-    font-size: 1em;
+    padding: 0;
 }
 
 button {
@@ -34,99 +24,32 @@ button#reverse:active {
     transform: translateY(4px);
 }
 
-button.start {
+button.start, button.start2  {
     box-shadow: .1em .1em 2.5em rgb(30, 100, 255);
 }
 
-button.start:active {
+button.start:active, button.start2:active {
     box-shadow: .1em .1em 2.5em rgb(0, 255, 0);
     transform: translateY(4px);
 }
 
-
-/* Media queries */
-@media only screen and (max-width: 425px) {
-    body { 
-        background-color: rgb(255, 0, 0);
-    }
-
-    .square {
-        width: 50%; /* Adjust the size of the square */
-        height: 50%; /* Adjust the size of the square */
-        background-color: rgb(148, 148, 148); /* Square background color */
-        border-radius: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: .1em .1em 2.5em rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-    }
-
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+/* Style for the square */
+.square {
+    width: 25%; /* Adjust the size of the square */
+    height: 50%; /* Adjust the size of the square */
+    background-color: rgb(148, 148, 148); /* Square background color */
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: .1em .1em 2.5em rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (min-width: 426px) and (max-width: 850px) {
-    body { 
-        background-color: rgb(242, 255, 0);
-    }
-
-    .square {
-        width: 50%; /* Adjust the size of the square */
-        height: 50%; /* Adjust the size of the square */
-        background-color: rgb(148, 148, 148); /* Square background color */
-        border-radius: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: .1em .1em 2.5em rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-    }
-
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-@media only screen and (min-width: 850px) {
-    body { 
-        background-color: rgb(0, 30, 255);
-    }
-
-    /* items */
-    /* Style for the square */
-    .square {
-        width: 25%; /* Adjust the size of the square */
-        height: 50%; /* Adjust the size of the square */
-        background-color: rgb(148, 148, 148); /* Square background color */
-        border-radius: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: .1em .1em 2.5em rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-    }
-
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-
-
-
