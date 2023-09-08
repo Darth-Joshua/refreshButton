@@ -154,6 +154,7 @@ window.addEventListener('load', function () {
         square.style.width = '50%';
     } else if (window.innerWidth >= 1440) {
         body.style.backgroundColor = 'green'; // Yellow background for medium screens
+        square.style.width = '25%';
     } else {
         body.style.backgroundColor = 'blue'; // Blue background for large screens
         square.style.width = '25%';
